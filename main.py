@@ -16,6 +16,12 @@ client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
 # Funçoes Logicas com o banco de dados
 def get_users():
+    # usa a variável de ambiente
+    chat_id_env = os.getenv("CHAT_ID")
+    if chat_id_env:
+        return [int(chat_id_env)]
+
+    # Caso contrário, busca no banco local
     try:
         with sqlite3.connect(DB_PATH) as conn:
             cursor = conn.cursor()
