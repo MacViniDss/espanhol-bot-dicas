@@ -1,12 +1,9 @@
 # 🇪🇸 DicaBot — Aprenda Espanhol no Telegram
 
-> Bot de dicas diárias de espanhol para brasileiros, powered by Google Gemini AI.
 
----
+## Status Atual: V1.0
 
-## Status Atual: Beta
-
-Esta é a fase **Beta** do DicaBot — a fundação do projeto está construída e funcionando.
+Durante a fase **Beta**:
 
 O bot é capaz de:
 - 🤖 Gerar dicas únicas de vocabulário e gramática com Inteligência Artificial (Gemini 2.5 Flash)
@@ -24,7 +21,7 @@ O script é executado **manualmente** nesta fase, servindo como prova de conceit
 
 ## 🗺️ Roadmap
 
-### ✅ Beta (atual)
+### ✅ Beta
 - [x] Integração com Google Gemini AI
 - [x] Envio de mensagens via Telegram Bot API
 - [x] Banco de dados SQLite com lista de usuários
@@ -34,9 +31,9 @@ O script é executado **manualmente** nesta fase, servindo como prova de conceit
 
 ### 🔜 Versão 1.0 — Automação com GitHub Actions
 
-A **grande evolução** da V1 será a automação completa via **GitHub Actions**.
+A **grande evolução** da V1 é a automação completa via **GitHub Actions**.
 
-Em vez de rodar o script manualmente, o próprio GitHub irá disparar o bot **todos os dias, automaticamente e de graça** — sem precisar de servidor, sem custo de infraestrutura.
+Em vez de rodar o script manualmente, o próprio GitHub dispara o bot **todos os dias, automaticamente e de graça** — sem precisar de servidor, sem custo de infraestrutura.
 
 **Como vai funcionar:**
 
@@ -52,13 +49,11 @@ Em vez de rodar o script manualmente, o próprio GitHub irá disparar o bot **to
   Todos os usuários recebem no Telegram ✅
 ```
 
-**O que será adicionado na V1:**
-- [ ] Workflow `.github/workflows/daily_tip.yml` com `schedule: cron`
-- [ ] `TELEGRAM_TOKEN` e `GEMINI_API_KEY` armazenados como **GitHub Secrets** (seguro)
-- [ ] Logs de execução visíveis direto no painel do GitHub
-- [ ] Zero custo — GitHub Actions oferece 2.000 minutos/mês gratuitos para repositórios públicos
-
-> 💡 O repositório precisará ser **público** para usar os minutos gratuitos do GitHub Actions, ou ter uma conta com o plano adequado para repositórios privados.
+**O que foi na V1:**
+- [x] Workflow `.github/workflows/daily_tip.yml` com `schedule: cron`
+- [x] `TELEGRAM_TOKEN` e `GEMINI_API_KEY` armazenados como **GitHub Secrets** (seguro)
+- [x] Logs de execução visíveis direto no painel do GitHub
+- [x] Zero custo — GitHub Actions oferece 2.000 minutos/mês gratuitos para repositórios públicos
 
 ---
 
