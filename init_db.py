@@ -1,25 +1,29 @@
 import sqlite3
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 def setup_database():
-    # Cria o banco de dados
+    chat_id = os.getenv("CHAT_ID")
+    
+    if not chat_id:
+        print("ERRO: CHAT_ID não encontrado no .env")
+        return
+
     conn = sqlite3.connect('database.db')
     cursor = conn.cursor()
     
-    # Criar tabela de usuários
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS users (
             chat_id TEXT PRIMARY KEY
         )
     ''')
     
-    MEU_CHAT_ID = '5275722798'
-    
-    # Insere o seu usuário inicial para testes
-    cursor.execute("INSERT OR IGNORE INTO users (chat_id) VALUES (?)", (MEU_CHAT_ID,))
-    
+    cursor.execute("INSERT OR IGNORE INTO users (chat_id) VALUES (?)", (chat_id,))
     conn.commit()
     conn.close()
-    print("Banco de dados 'database.db' criado e populado com sucesso!")
+    print("Banco de dados criado e populado com sucesso!")
 
 if __name__ == '__main__':
     setup_database()
