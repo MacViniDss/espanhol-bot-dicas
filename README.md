@@ -1,4 +1,4 @@
-# 🇪🇸 DicaBot — Aprenda Espanhol no Telegram
+# 🇪🇸 SpanishBot — Aprenda Espanhol no Telegram
 
 
 ## Status Atual: V1.0
