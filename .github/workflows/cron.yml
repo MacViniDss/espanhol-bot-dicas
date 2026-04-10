@@ -2,7 +2,7 @@ name: Broadcast Diário
 
 on:
   schedule:
-    - cron: '12 9 * * *'  # Todo dia às 9h:12min no horário de Brasília (UTC-3)
+    - cron: '12 9 * * *'  # Todo dia às 6h:12min no horário de Brasília (UTC-3)
   workflow_dispatch:      #  botão de teste manual!
 
 jobs:
