@@ -1,5 +1,5 @@
 # 🇪🇸 SpanishBot — Aprenda Espanhol no Telegram
-
+README English version: [[https://github.com/MacViniDss/espanhol-bot-dicas/blob/main/README_EN.md]]
 
 ## Status Atual: V1.0
 
@@ -38,7 +38,7 @@ Em vez de rodar o script manualmente, o próprio GitHub dispara o bot **todos os
 **Como vai funcionar:**
 
 ```
-⏰ Todo dia às 8h (horário configurável)
+⏰ Todo dia às 6h-7h (horário configurável)
         ↓
   GitHub Actions acorda
         ↓
