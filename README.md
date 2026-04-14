@@ -57,6 +57,11 @@ Em vez de rodar o script manualmente, o próprio GitHub dispara o bot **todos os
 
 ---
 
+### Problema encontrado: 
+Em uma manhã não recebi a dica diária do meu Agente IA de Aulas de Espanhol, pelo que eu vi ele encontrou o primeiro problema real: erro 503 UNAVAILABLE no Gemini 2.5 Flash às 08:00 em ponto.
+Em outras palavras, a maioria dos workflows de automação é configurada nos horarios de picos. Quando milhares de bots acordam todos ao mesmo tempo (08:00:00), os clusters de processamento sofrem um pico de estresse.
+Solução rápida: mudei o cron para 09:12 UTC, que conrresponde às 06:12 no horário de brasília. 
+
 ## 🛠️ Tecnologias Utilizadas
 
 | Tecnologia | Uso |
