@@ -1,5 +1,5 @@
 # 🇪🇸 SpanishBot — Aprenda Espanhol no Telegram
-README English version: [[https://github.com/MacViniDss/espanhol-bot-dicas/blob/main/README_EN.md]]
+README English version: [link](https://github.com/MacViniDss/espanhol-bot-dicas/blob/main/README_EN.md)
 
 ## Status Atual: V1.0
 
