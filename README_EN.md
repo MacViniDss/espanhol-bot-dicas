@@ -34,6 +34,7 @@ The **major upgrade** in V1 is full automation via **GitHub Actions**.
 Instead of running the script manually, GitHub itself triggers the bot **every day, automatically and for free** — no server required, no infrastructure cost.
 
 **How it works:**
+´´´ 
 ⏰ Every day at 6:00 AM - 7:00 AM (configurable time)
 ↓
 GitHub Actions wakes up
@@ -43,6 +44,7 @@ Runs main.py
 Gemini generates the daily tip
 ↓
 All users receive it on Telegram ✅
+´´´ 
 
 **What was implemented in V1:**
 - [x] `.github/workflows/daily_tip.yml` workflow with `schedule: cron`
